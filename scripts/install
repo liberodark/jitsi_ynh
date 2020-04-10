@@ -156,7 +156,7 @@ ynh_print_info --message="Configuring metronome..."
 ynh_replace_string --match_string="prosody" --replace_string="metronome" --target_file="$final_path/jitsi-meet-prosody/mod_muc_domain_mapper.lua"
 
 # Create focus user
-yunohost domain add auth.$domain
+#yunohost domain add auth.$domain
 yunohost user create $focus_user -f $focus_user -l $focus_user -m ${focus_user}@auth.$domain -p $focus_password -q 0
 yunohost user create $jvb_user -f $jvb_user -l $jvb_user -m ${jvb_user}@auth.$domain -p $jvb_password -q 0
 
