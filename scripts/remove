@@ -133,7 +133,7 @@ yunohost tools regen-conf metronome
 # Delete focus user
 yunohost user delete $focus_user --purge
 yunohost user delete $jvb_user --purge
-yunohost domain remove auth.$domain
+#yunohost domain remove auth.$domain
 
 #=================================================
 # REMOVE THE LOG FILES
